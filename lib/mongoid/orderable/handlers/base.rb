@@ -24,16 +24,13 @@ module Handlers
              :orderable_scope,
              :orderable_scope_changed?,
              :orderable_top,
+             :new_record?,
              :orderable_bottom,
              :_id,
              :persisted?,
              :embedded?,
              :collection_name,
              to: :doc
-
-    def new_record?
-      @new_record
-    end
 
     def use_transactions
       false
